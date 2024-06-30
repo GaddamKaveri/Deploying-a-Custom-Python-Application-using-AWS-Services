@@ -16,6 +16,7 @@ Deploy a Python application using AWS EC2, Docker, ECS, and ECR.
 
 1.1 ECR Repository:
                    Create an ECR repository via AWS Console or CLI.
+
 1.2 EC2 Instance:
                   Launch an EC2 instance.
 
@@ -23,12 +24,13 @@ Deploy a Python application using AWS EC2, Docker, ECS, and ECR.
 
 2.1 Dockerize Application:
                           Create Dockerfile
-                          Build and tag Docker image
+                          ,Build and tag Docker image
 
 3. Push Docker Image to ECR:
 
 3.1 Authenticate to ECR:
                         Obtain and use Docker login credentials.
+
 3.2 Push Image:
               Tag and push Docker image to ECR.
 
@@ -36,6 +38,7 @@ Deploy a Python application using AWS EC2, Docker, ECS, and ECR.
 
 4.1 Create Cluster:
                   Create ECS cluster via Console or CLI.
+
 4.2 Task Definition:
                   Create ECS task definition with Docker image.
 
@@ -43,6 +46,7 @@ Deploy a Python application using AWS EC2, Docker, ECS, and ECR.
 
 5.1 Create Service:
                   Create ECS service with task definition.
+
 5.2 Monitor Service:
                   Monitor ECS service and view logs.
 
@@ -50,5 +54,6 @@ Deploy a Python application using AWS EC2, Docker, ECS, and ECR.
 
 6.1 Security Groups:
                   Configure inbound rules for access.
+
 6.2 Access Endpoint:
                   Use the endpoint URL or IP address to access the application.
