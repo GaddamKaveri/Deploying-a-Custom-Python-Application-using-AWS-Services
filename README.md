@@ -1,5 +1,7 @@
 Project Description:
 
+Project Title: Scalable Application Deployment Using AWS ECS and ECR
+
 Project Description: This project involved the development of a streamlined application, packaging it to form a Docker image, solving the image to undergo Amazon Elastic Container Registry (ECR), and carrying out the deployment with the utilization of Amazon Elastic Container Service (ECS). 
 
 The crucial steps can be summarized as follows:
