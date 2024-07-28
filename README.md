@@ -1,59 +1,20 @@
-# Deploying-a-Custom-Python-Application-using-AWS-Services
+Project Description:
 
-# Overview:
+Project Description: This project involved the development of a streamlined application, packaging it to form a Docker image, solving the image to undergo Amazon Elastic Container Registry (ECR), and carrying out the deployment with the utilization of Amazon Elastic Container Service (ECS). 
 
-Deploy a Python application using AWS EC2, Docker, ECS, and ECR.
+The crucial steps can be summarized as follows:
 
-# Prerequisites:
+Application Development:Created a basic application to serve as the deployment target
+Dockerization:Prepared a Dockerfile that describes the containerized application and ensures it runs reliably. One way of creating a Docker image is to carry out a local build and test it to confirm the application functions as expected.
+Pushing to Amazon ECR: I made a repository in Amazon ECR to store and manage the Docker image in ECR repository securely.
+Deployment with Amazon ECS:I set up an ECS cluster and defined task definitions for the application. Created a service to manage the application instances and ensure high availability. Deployed the application, leveraging ECS’s orchestration capabilities for scaling and management.
 
-1.AWS account
-2.Basic knowledge of Docker, ECS, ECR, and EC2
-3.Python application code
+Technologies Used:
 
-# Steps:
+Docker: For containerizing the application.
+Amazon ECR: For storing and managing Docker images.
+Amazon ECS: For deploying and managing the application.
 
-1. AWS Resources Setup:
+Outcome:
 
-ECR Repository:
-                   Create an ECR repository via AWS Console or CLI.
-
-EC2 Instance:
-                  Launch an EC2 instance.
-
-2. Prepare Python Application:
-
-Dockerize Application:
-                          Create Dockerfile
-                          ,Build and tag Docker image
-
-3.Push Docker Image to ECR:
-
-Authenticate to ECR:
-                        Obtain and use Docker login credentials.
-
-Push Image:
-              Tag and push Docker image to ECR.
-
-4. Set Up ECS Cluster:
-
-Create Cluster:
-                  Create ECS cluster via Console or CLI.
-
-Task Definition:
-                  Create ECS task definition with Docker image.
-
-5. Deploy Application:
-
-Create Service:
-                  Create ECS service with task definition.
-
-Monitor Service:
-                  Monitor ECS service and view logs.
-
-6. Access Application:
-
- Security Groups:
-                  Configure inbound rules for access.
-
-Access Endpoint:
-                  Use the endpoint URL or IP address to access the application.
+The project successfully demonstrated the end-to-end deployment of a Dockerized application on AWS, utilizing ECS for scalability and ECR for efficient image management. This setup ensured a reliable and scalable environment for running the application, highlighting the strengths of using containerization and cloud services in modern application development and deployment
